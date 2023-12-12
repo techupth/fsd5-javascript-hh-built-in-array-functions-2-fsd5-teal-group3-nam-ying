@@ -375,4 +375,60 @@ const bills = [
 
 // Start coding here
 
-const totalPaidByLocation;
+const totalPaidByLocation=[]
+
+// function totalAmout(array){
+//     array.filter((array)=>{
+//         if(!totalPaidByLocation.includes(array.location)){
+//             totalPaidByLocation.splice(totalPaidByLocation.length,0,array.location,array.total)
+//             console.log(totalPaidByLocation)
+            
+//         }
+//         else if(totalPaidByLocation.includes(array.location)){
+//             let index = totalPaidByLocation.indexOf(array.location);
+//             totalPaidByLocation[index+1] += array.total;
+//         }
+//     }
+//         )
+//         return totalPaidByLocation
+    //   }
+
+
+    function totalAmout(array){
+        const total = array.reduce(sum,{})
+        return total
+        }
+
+    function sum(accumulator,currentvalue){
+        let location= currentvalue.location
+        let total = currentvalue.total
+
+        if (accumulator[location]){
+            accumulator[location]+=total
+        }else{
+            accumulator[location]=total
+        }
+        
+        return accumulator
+       
+        
+    }
+    console.log(totalAmout(bills))
+
+
+
+
+    
+
+//     let person = {
+// name:"palm"
+//     }
+// let name=person.name
+// console.log(person.name)
+// console.log(person[abc()])
+// console.log(person["name"])
+// console.log(person[name])
+
+// function abc(){
+//     return "name"
+// }

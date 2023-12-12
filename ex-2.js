@@ -374,5 +374,29 @@ const bills = [
 ];
 
 // Start coding here
+// const newBills=[]
+// function memberNoNull(array){
+  
+//   array.filter((array)=>{
+//     if(array.member!==null){
+//       newBills.push(array.member.name)
+//     }
+//   })
+//  return newBills
+// }
 
-const newBills;
+// console.log(memberNoNull(bills))
+// console.log(newBills)
+
+const newBills= 
+  bills.filter((bill)=>{
+    if(bill.member!==null){
+      return bill.member.name
+    }
+  })
+ 
+
+
+
+console.log(newBills)
+
