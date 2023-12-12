@@ -4,7 +4,7 @@ function updateCarCollection(carBrand) {
   // Start coding here
   return carCollection.includes(carBrand)? 
   `${carBrand} has already existed in the ${carCollection.indexOf(carBrand)+1} position of car collection.`:
-  `${carCollection.splice(carCollection.length,0,carBrand)}new car collection is :${carCollection}.`
+  `${carCollection.splice(carCollection.length,0,carBrand)}new car collection is : ${carCollection}.`
 }
 
 //ผลลัพธ์ที่ควรได้จาก Example case
