@@ -373,6 +373,8 @@ const bills = [
   },
 ];
 
-// Start coding here
+// Use .filter()
 
-const newBills;
+const newBills = bills.filter((memberState) => memberState.member !== null);
+console.log(newBills);
+console.log(`Total newBills Member = ${newBills.length}`);
