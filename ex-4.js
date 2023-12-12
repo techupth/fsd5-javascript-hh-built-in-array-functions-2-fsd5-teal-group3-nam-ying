@@ -374,4 +374,17 @@ const bills = [
 ];
 
 // Start coding here
-const totalMembers;
+
+function noDuplicateMember(array){
+  const uniqueMembers = []
+  array.filter((arrayObject)=>{
+    if(arrayObject.member!==null && !uniqueMembers.includes(arrayObject.member.name)){
+      uniqueMembers.push(arrayObject.member.name)
+      console.log(uniqueMembers)
+  }}
+  )
+ return uniqueMembers.length
+}
+const totalMembers = noDuplicateMember(bills)
+console.log(totalMembers)
+

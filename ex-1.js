@@ -374,3 +374,12 @@ const bills = [
 ];
 
 // Start coding here
+function totalAmout(array){
+return array.reduce(sum,0)
+}
+function sum(acc,cur){
+  return acc+=cur.total
+}
+// return number bc initial = number 0
+//initial will control type of return valu
+console.log("Total bill transaction is "+totalAmout(bills))

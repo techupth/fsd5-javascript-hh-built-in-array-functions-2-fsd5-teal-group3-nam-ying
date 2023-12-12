@@ -374,4 +374,18 @@ const bills = [
 ];
 
 // Start coding here
-const billMembers;
+const billMembers=[]
+
+function getMemberName(array){
+array.filter((array)=>{
+  if (array.member!==null){
+    billMembers.push(array.member.name)
+   
+  }
+})
+return billMembers
+}
+
+console.log(getMemberName(bills));
+console.log(billMembers)
+
